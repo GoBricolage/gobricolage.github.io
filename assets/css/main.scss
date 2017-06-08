@@ -39,6 +39,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+#privacyModal .modal-header {
+	background-color: #df922e;
+}
+
 // Navigation
 .bricolage-nav {
 	background-color: $brand-color;
@@ -48,6 +52,18 @@ $on-laptop:        800px;
 	width: 110px;
 }
 
+#capabilitiesGroup .card {
+	text-align: left;
+}
+
+#capabilitiesGroup .card p{
+	margin-left: 25px;
+}
+
+#capabilitiesGroup .card li{
+	text-align: left;
+	list-style-type: none;
+}
 
 //Fonts
 #about-section h1{
@@ -58,6 +74,10 @@ $on-laptop:        800px;
 
 .navbar-light .navbar-brand {
 	color: white;
+}
+
+.section {
+	text-align: center;
 }
 
 // Cards
@@ -135,6 +155,24 @@ $on-laptop:        800px;
 }
 
 // Sections
+.capabilitiesWrapper {
+	padding: 25px 25px 25px 25px;
+    background-color: rgba(28, 28, 28, 0.61);
+    border-radius: 20px;
+}
+
+.calloutSection {
+	background-color: $brand-color;
+	padding: 60px 20px 60px 20px;
+}
+
+.calloutSection {
+	color: white;
+	text-align: center;
+	font-family: $secondary-font;
+}
+
+
 .section h1{
 	font-family: $secondary-font;
 	color: $gray-color;
@@ -169,13 +207,21 @@ $on-laptop:        800px;
 	color: white;
 }
 
+.section h5 {
+	font-family: $secondary-font;
+	line-height: 1.2em;
+	font-size: 70px;
+	padding-bottom: 15px;
+	color: $gray-color-black;
+}
+
 .section .media-body {
 	color: white;
 }
 
 #capabilities-section {
 	padding: 100px 20px 100px 20px;
-	background-color: white;
+	background: $gray-color-light url(/assets/images/product-design.jpg) no-repeat;
 }
 
 .contact-section{
@@ -193,6 +239,21 @@ $on-laptop:        800px;
 
 .capabilities-buttons {
 	text-align: center;
+	font-size: x-large;
+}
+
+.capabilities-buttons .toggleButton {
+	font-size: x-large;
+	color: #fff;
+	background-color: #75b553;
+	border-color: #4d882d;
+}
+
+.capabilities-buttons .toggleButton:hover {
+	font-size: x-large;
+	color: #fff;
+    background-color: #449d44;
+    border-color: #419641;
 }
 
 .contact-section h3 {
