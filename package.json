@@ -1,0 +1,23 @@
+{
+  "name": "gobricolage",
+  "version": "1.0.0",
+  "description": "Bricolage Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoBricolage/gobricolage.github.io.git"
+  },
+  "author": "Joey Langley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoBricolage/gobricolage.github.io/issues"
+  },
+  "homepage": "https://github.com/GoBricolage/gobricolage.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0"
+  }
+}

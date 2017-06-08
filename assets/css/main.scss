@@ -1,0 +1,263 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Variables to modify font folders
+//$icon-font-path:      "../fonts/bootstrap";
+$fa-font-path:        "/fonts/font-awesome/fonts";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome/scss/font-awesome";
+
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+// Our variables
+$base-font-family: 'Open Sans Condensed', sans-serif;
+$secondary-font: 'Fredericka the Great', cursive;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #6CCFF7;
+
+$gray-color:       #828282;
+$gray-color-light: lighten($gray-color, 40%);
+$gray-color-dark:  darken($gray-color, 25%);
+$gray-color-black: darken($gray-color, 50%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Navigation
+.bricolage-nav {
+	background-color: $brand-color;
+}
+
+.brand-logo {
+	width: 110px;
+}
+
+
+//Fonts
+#about-section h1{
+	text-align: center;
+	font-family: $secondary-font;
+	font-size: 116px;
+}
+
+.navbar-light .navbar-brand {
+	color: white;
+}
+
+// Cards
+
+.card .fa {
+	text-align: center;
+	font-size: 100px;
+}
+
+#learn-more .card-block {
+	text-align: center;
+}
+
+#learn-more .card-title {
+	font-family: $secondary-font;
+}
+
+#learn-more .card {
+	padding-top: 20px;
+}
+
+#generate-card .fa, #generate-card .card-title {
+	color: #df922e;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#collaborate-card .fa, #collaborate-card .card-title{
+	color: #75b553;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#design-card .fa, #design-card .card-title{
+	color: #ce2458;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#manufacture-card .fa, #manufacture-card .card-title{
+	color: #8b77b2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#realize-card .fa, #realize-card .card-title{
+	color: #fad633;
+    margin-left: auto;
+    margin-right: auto;
+}
+.site-footer a {
+	color: white;
+}
+
+.site-footer a:hover {
+	color: $brand-color;
+}
+
+.social-icons {
+	display: flex;
+}
+
+.icon-bg{
+	margin: 0px 5px 0px 5px;
+	background-color: $gray-color-dark;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.social-icons .fa{
+	color: white;
+	padding: 6px 3px 6px 5px;
+}
+
+// Sections
+.section h1{
+	font-family: $secondary-font;
+	color: $gray-color;
+}
+
+#about-section{
+	padding: 130px 50px 130px 50px;
+	text-align: center;
+}
+
+#video-banner{
+	height: 600px;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/images/video-bg.jpg) no-repeat;
+	padding: 100px 20px 100px 20px;
+}
+
+#learn-more{
+	background-color: white;
+	padding: 100px 20px 100px 20px;
+	text-align: center;
+}
+
+.section .media-body {
+	padding: 10px 10px 10px 25px;
+}
+
+.section .media-body h5 {
+	font-family: $secondary-font;
+	line-height: 1.2em;
+	font-size: 36px;
+	padding-bottom: 15px;
+	color: white;
+}
+
+.section .media-body {
+	color: white;
+}
+
+#capabilities-section {
+	padding: 100px 20px 100px 20px;
+	background-color: white;
+}
+
+.contact-section{
+	height: 200px;
+	background-color: $gray-color-dark;
+	border-top: 1px solid $gray-color-light;
+	color: white;
+	text-align: right;
+	padding: 20px 30px 5px 5px;
+}
+
+#capabilities-section h2, #capabilities-section h3 {
+	color: $brand-color;
+}
+
+.capabilities-buttons {
+	text-align: center;
+}
+
+.contact-section h3 {
+	color: $brand-color;
+}
+
+.carousel-item {
+	height: 300px;
+}
+
+.carousel-holder{
+	width: 340px;
+	float: right;
+	border: solid 1px $gray-color-dark;
+}
+
+.carousel-item img {
+	height: 300px;
+}
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(/assets/images/tech-bg.png) no-repeat;
+    background-size: cover;
+}
+
+#learn-more button {
+	margin-top: 20px;
+}
+
+.contact-section li {
+	list-style-type: none;
+}
+
+.video-container{
+	display: inline-block;
+}
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
