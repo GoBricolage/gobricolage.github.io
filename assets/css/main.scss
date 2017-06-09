@@ -43,6 +43,10 @@ $on-laptop:        800px;
 	background-color: #df922e;
 }
 
+#bottomNav a:visited {
+	color: white;
+}
+
 // Navigation
 .bricolage-nav {
 	background-color: $brand-color;

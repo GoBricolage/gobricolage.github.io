@@ -18,6 +18,7 @@
   "homepage": "https://github.com/GoBricolage/gobricolage.github.io#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "jquery-smooth-scroll": "^2.2.0"
   }
 }

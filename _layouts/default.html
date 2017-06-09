@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body data-target="mainNav" data-spy="scroll">
 
     {% include header.html %}
     {% include learnmore.html %}
@@ -21,6 +21,7 @@
     <script src="{{'/js/jquery/jquery.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/js/tether/tether.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/js/bootstrap/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/js/smooth-scroll/jquery.smooth-scroll.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/js/main.js' | prepend: site.baseurl}}"></script>
   </body>
 
