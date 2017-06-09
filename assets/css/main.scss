@@ -46,6 +46,7 @@ $on-laptop:        800px;
 // Navigation
 .bricolage-nav {
 	background-color: $brand-color;
+	border-bottom: solid 1px $gray-color-black;
 }
 
 .brand-logo {
@@ -70,6 +71,7 @@ $on-laptop:        800px;
 	text-align: center;
 	font-family: $secondary-font;
 	font-size: 116px;
+	text-shadow: 2px 2px #fff;
 }
 
 .navbar-light .navbar-brand {
@@ -142,11 +144,17 @@ $on-laptop:        800px;
 
 .icon-bg{
 	margin: 0px 5px 0px 5px;
-	background-color: $gray-color-dark;
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
 	text-align: center;
+	background-color: $gray-color-dark;
+	-webkit-transition: background-color 0.5s ease;
+	transition: background-color 0.5s ease;
+}
+
+.icon-bg:hover {
+	background-color: #df922e;
 }
 
 .social-icons .fa{
@@ -178,6 +186,10 @@ $on-laptop:        800px;
 	color: $gray-color;
 }
 
+.section .media-body {
+	text-align: left;
+}
+
 #about-section{
 	padding: 130px 50px 130px 50px;
 	text-align: center;
@@ -187,6 +199,12 @@ $on-laptop:        800px;
 	height: 600px;
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/images/video-bg.jpg) no-repeat;
 	padding: 100px 20px 100px 20px;
+	border-bottom: solid 1px $gray-color-black;
+	border-top: solid 1px $gray-color-black;
+}
+
+.mediaVideo{
+	border: solid 1px white;
 }
 
 #learn-more{
@@ -222,6 +240,10 @@ $on-laptop:        800px;
 #capabilities-section {
 	padding: 100px 20px 100px 20px;
 	background: $gray-color-light url(/assets/images/product-design.jpg) no-repeat;
+}
+
+#capabilities-section h5 {
+	text-shadow: 2px 2px #fff;
 }
 
 .contact-section{
@@ -274,6 +296,7 @@ $on-laptop:        800px;
 	height: 300px;
 }
 
+
 #background {
     position: fixed;
     top: 50%;
@@ -299,6 +322,10 @@ $on-laptop:        800px;
 
 .video-container{
 	display: inline-block;
+}
+
+.headerVideoContainer{
+	border-bottom: solid 1px $gray-color-black;
 }
 
 // Use media queries like this:

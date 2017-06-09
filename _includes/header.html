@@ -3,43 +3,45 @@
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded bricolage-nav">
   <div class="container">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="{{ site.baseurl }}"><img class="img-responsive brand-logo" src="/assets/images/BricolageLogo.png"></a>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Capabilities</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Solutions Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="{{ site.baseurl }}"><img class="img-responsive brand-logo" src="/assets/images/BricolageLogo.png"></a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#learn-more">Our Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#capabilities-section">Capabilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#getStartedModal">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <div class="icon-bg">
+        <a href="https://www.facebook.com/gobricolage"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+      </div>
+      <div class="icon-bg">
+        <a href="https://twitter.com/GoBricolage"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+      <div class="icon-bg">
+        <a href="https://www.linkedin.com/company/bricolage-inc-?report%2Esuccess=KJ_KkFGTDCfMt-A7wV3Fn9Yvgwr02Kd6AZHGx4bQCDiP6-2rfP2oxyVoEQiPrcAQ7Bf"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+    </div>
   </div>
-  <div class="social-icons">
-    <div class="icon-bg">
-      <i class="fa fa-facebook-official" aria-hidden="true"></i>
-    </div>
-    <div class="icon-bg">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-    </div>
-    <div class="icon-bg">
-      <i class="fa fa-linkedin" aria-hidden="true"></i>
-    </div>
-  </div>
-</div>
 </nav>
 </header>
 <!-- End Navigation Section -->
 <!-- Video Banner Section -->
-<video autoplay loop muted poster="/assets/images/tech-bg.png" id="background">
-  <source src="/assets/images/tech-bg.mp4" type="video/mp4">
-   <img src="/assets/images/tech-bg.png">
-</video>
+
+<div class="headerVideoContainer">
+  <video autoplay loop muted poster="/assets/images/tech-bg.png" id="background">
+    <source src="/assets/images/header-bg.mp4" type="video/mp4">
+     <img src="/assets/images/tech-bg.png">
+  </video>
   <div class="container">
     <div id="about-section">
       <div class="row">
@@ -51,4 +53,6 @@
       </div>
     </div>
   </div>
+</div>
+
 <!-- End Video Banner Section -->
