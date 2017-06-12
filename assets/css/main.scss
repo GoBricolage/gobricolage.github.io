@@ -87,6 +87,9 @@ $on-laptop:        800px;
 }
 
 // Cards
+#learn-more .card{
+	margin-bottom: 35px;
+}
 
 .card .fa {
 	text-align: center;
@@ -190,7 +193,7 @@ $on-laptop:        800px;
 	color: $gray-color;
 }
 
-.section .media-body {
+.section .video-body {
 	text-align: left;
 }
 
@@ -209,6 +212,11 @@ $on-laptop:        800px;
 
 .mediaVideo{
 	border: solid 1px white;
+	height: 330px;
+}
+
+.video-body .btn {
+	margin-top: 20px;
 }
 
 #learn-more{
@@ -217,11 +225,11 @@ $on-laptop:        800px;
 	text-align: center;
 }
 
-.section .media-body {
+.section .video-body {
 	padding: 10px 10px 10px 25px;
 }
 
-.section .media-body h5 {
+.section .video-body h5 {
 	font-family: $secondary-font;
 	line-height: 1.2em;
 	font-size: 36px;
@@ -237,7 +245,7 @@ $on-laptop:        800px;
 	color: $gray-color-black;
 }
 
-.section .media-body {
+.section .video-body {
 	color: white;
 }
 
@@ -285,21 +293,21 @@ $on-laptop:        800px;
 .contact-section h3 {
 	color: $brand-color;
 }
-
+/*
 .carousel-item {
 	height: 300px;
 }
-
+*/
 .carousel-holder{
-	width: 340px;
+//	width: 340px;
 	float: right;
 	border: solid 1px $gray-color-dark;
 }
-
+/*
 .carousel-item img {
 	height: 300px;
 }
-
+*/
 
 #background {
     position: fixed;
@@ -345,6 +353,67 @@ $on-laptop:        800px;
     }
 }
 
+@media screen and (max-width: 991px){
+	.section .video-body h5 {
+		font-size: 30px;
+		line-height: 1em;
+	}
+}
+
+@media (max-width: 575px){
+	#about-section {
+		padding: 48px 0px 48px 0px;
+	}
+	#about-section h1 {
+		font-size: 70px;
+	}
+	.section h5 {
+		font-size: 50px;
+	}
+	#video-banner {
+		padding: 50px 0px 50px 0px;
+	}
+	.section .video-body h5 {
+		font-size: 24px;
+	}
+	.carousel-holder {
+		height: 202px;
+	}
+	.carousel-inner, .carousel-inner img {
+		height: 200px;
+	}
+	.capabilities-buttons .toggleButton {
+		font-size: small;
+	}
+	.navbar-toggler {
+		margin-right: -85px;
+	}
+	.mediaVideo {
+		height: 180px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	#about-section h1 {
+		font-size: 80px;
+	}
+	.mediaVideo {
+		height: 275px;
+	}
+	#video-banner {
+		padding: 20px 0px 20px 0px;
+	}
+	.video-body .btn {
+		margin-top: 8px;
+	}
+}
+
+@media (max-width: 1199px) {
+	#video-banner {
+		padding: 50px 20px 50px 20px;
+	}
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
