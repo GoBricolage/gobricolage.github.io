@@ -391,12 +391,15 @@ $on-laptop:        800px;
 	.mediaVideo {
 		height: 180px;
 	}
+	.navbar {
+		display: -webkit-box;
+	}
 
 }
 
 @media (max-width: 767px) {
 	#about-section h1 {
-		font-size: 80px;
+		font-size: 60px;
 	}
 	.mediaVideo {
 		height: 275px;
@@ -409,7 +412,13 @@ $on-laptop:        800px;
 	}
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 992px) {
+	#video-banner{
+		padding: 50px 20px 100px 20px;
+	}
+}
+
+@media (min-width: 1199px) {
 	#video-banner {
 		padding: 50px 20px 50px 20px;
 	}
